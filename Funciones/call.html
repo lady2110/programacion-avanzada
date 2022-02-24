@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>java Callback</p>	
+	<p id="call"></p>
+
+	<script>
+		function myVista(algo){
+			document.getElementById("call").innerHTML=algo;
+		}
+
+		// function primeraVista(){
+		// 	myVista("hola!!");
+		// }
+
+		// function segundaVista(){
+		// 	myVista("Adios!!")
+		// }
+
+		function calculo(num1, num2, mycallback){
+			let sum = num1 + num2;
+			mycallback(sum);
+		}
+
+		calculo(5,7, myVista);
+	</script>
+</body>
+</html>

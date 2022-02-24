@@ -23,7 +23,7 @@
 //console.log(producto.decirProducto());
 console.log(producto.decirProductoFlecha());*/
 
-const producto ={
+/*const producto ={
 	nombre:'shampoo',
 	decirProducto: function(){
 		let that = this;
@@ -34,4 +34,30 @@ const producto ={
 }
 }
 
-producto.decirProducto();
+producto.decirProducto();*/
+
+/*const producto ={
+	nombre:'shampoo',
+	decirProducto: function(){
+	setTimeout(() => {
+		console.log(this.nombre);
+	},
+	3000);
+}
+}*/
+
+//callback
+
+// function reflexion (frase, callback){
+// 	var mifrase = "Un tiro y, " + frase;
+// 	callback(mifrase);
+// }
+
+// function logFrase(frase){
+// 	console.log(frase);
+// }
+
+// reflexion("pal rio",logFrase);
+
+
+
