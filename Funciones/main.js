@@ -1,4 +1,4 @@
-const carro ={
+/*const carro ={
 	placa:'HJJ789',
 	modelo: '2022',
 	//funcion tradicional
@@ -9,4 +9,29 @@ const carro ={
 	parar:()=>{
 		console.log('parando el coche ${this.placa} ${this.modelo}');
 	}
+}*/
+
+/*const producto ={
+	nombre:'shampoo',
+	decirProducto(){
+		console.log(this.nombre);
+	},
+	decirProductoFlecha: () => {
+		console.log(this.nombre);
+	}
 }
+//console.log(producto.decirProducto());
+console.log(producto.decirProductoFlecha());*/
+
+const producto ={
+	nombre:'shampoo',
+	decirProducto: function(){
+		let that = this;
+	setTimeout(function(){
+		console.log(that.nombre);
+	},
+	3000);
+}
+}
+
+producto.decirProducto();
