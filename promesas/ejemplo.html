@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Promesas en JS</title>
+</head>
+<body>
+	<script>
+		//creamos un objeto
+		// let p= new Promise(function(resolve,reject){
+		// 	let suma = 2 + 9;
+		// 	if(suma ===8 ){
+		// 		resolve("Correcto");
+		// 	}else{
+		// 		reject("Incorrecto");
+		// 	}
+		// });
+		// p.then(function(mensaje){
+		// 	console.log(mensaje); 
+		// }).catch(function(error){
+		// 	console.log(error);
+		// });
+		// funcion
+		function miPromesa(){
+			return new Promise (function(resolve,reject){
+				let suma= 2+6;
+				if(suma===8){
+					resolve("Correcto");
+				}else{
+					reject("Incorrecto");
+				}
+			});
+		}
+
+		miPromesa().then(function(mensaje){
+			console.log(mensaje);
+		}).catch(function(error){
+			console.log(error);
+		})
+	</script>
+</body>
+</html>
